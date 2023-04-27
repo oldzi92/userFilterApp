@@ -13,7 +13,7 @@ Po sklonowaniu repozytorium należy wykonać następujące kroki:
 
 ### Zadanie
 
-Twoim zadaniem jest dokończenie aplikacji zgodnie z podanymi informacjami (gif, designy oraz opis)
+Twoim zadaniem jest dokończenie aplikacji zgodnie z podanymi informacjami (designy oraz opis, zhostowana aplikacja)
 
 Aplikacja wyświetla listę userów na podstawie tablicy obiektów: pierwszym Twoim zadaniem jest analiza aplikacji/istniejącego kodu tak żeby zrozumieć co z czym się łączy i co od czego zależy. Aplikacja jest pozbawiona funkcjonalnosci filtrowania userów za pomocą search bara - jest to Twoje główne zadanie do wykonania!
 
@@ -23,7 +23,7 @@ Aplikacja wyświetla listę userów na podstawie tablicy obiektów: pierwszym Tw
 
 - komponent UsersList przyjmuje props users który wyswietla przekazaną listę - jeżeli przekażesz pustą tablice aplikacja nic nie wyświetli, jeżeli zakomentujesz któregoś z userów aplikacja również go pominie - musisz w jakiś sposób przekazywać tutaj odfiltrowanych userów
 - zwróć uwagę na funkcję handleSearchPhraseChange - co ona robi gdzie jest przekazywana i w jakim momencie jest wywoływana, sprawdź czym jest parametr searchPhraseInput
-- obecny stan aplikacji nie jest zgodny z designem
+- obecny stan aplikacji nie jest zgodny z designemw
 
 ### wskazówki
 
@@ -42,4 +42,6 @@ a i dużo consoluj :p
 
 ### Przykładowe działanie
 
-![Jak apka powinna działać](./requirements.gif)
+![Design](./design1.png)
+
+![Design](./design2.png)
