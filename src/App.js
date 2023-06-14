@@ -60,10 +60,22 @@ function App() {
   const [users] = useState(USERS);
   const [searchPhrase, setSearchPhrase] = useState("");
 
-  const handleSearchPhraseChange = (searchPhraseInput) => {};
+  const handleSearchPhraseChange = (searchPhraseInput) => {
+    setSearchPhrase(searchPhraseInput);
+  };
 
   const getFilteredUsers = () => {
-    return users;
+    return users.filter(({ name, lastName, address }) => {
+      if (!searchPhrase) {
+        return true;
+      }
+      return (
+        name.toLocaleLowerCase().includes(searchPhrase) ||
+        lastName.toLocaleLowerCase().includes(searchPhrase) ||
+        address.city.toLocaleLowerCase().includes(searchPhrase) ||
+        address.country.toLocaleLowerCase().includes(searchPhrase)
+      );
+    });
   };
 
   const usersToDisplay = getFilteredUsers();

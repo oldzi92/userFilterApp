@@ -18,7 +18,7 @@ body {
 }
 
 .header__container {
-  background-color: #276ace;
+  background-color: #fa30d5;
   border-radius: 5px 5px 0 0;
   padding: 30px;
 }
@@ -41,12 +41,12 @@ body {
   border-radius: 20px;
   border: none;
   padding: 10px 15px;
-  background-color: #0e3979;
-  color: #ccc;
+  background-color: #aaf7fc;
+  color: #000000;
 }
 
 .search::placeholder {
-  color: #aaa;
+  color: #666666;
 }
 
 .search:focus {
